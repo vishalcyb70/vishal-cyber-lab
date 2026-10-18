@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07110f">
+<title>Vishal | Cyber Lab</title>
+<style>
+:root{--bg:#07110f;--panel:#0d1b18;--panel2:#10231e;--green:#62ffad;--muted:#9cb7ac;--line:#214137;--white:#eafff4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#12372b 0,transparent 35%),var(--bg);color:var(--white);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid #1b332b}.brand{font-weight:800;letter-spacing:.5px}.brand span{color:var(--green)}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:.93rem}.navlinks a:hover{color:var(--green)}
+.hero{padding:82px 0 62px;display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}.eyebrow{color:var(--green);font-size:.82rem;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.05;margin:14px 0 20px;letter-spacing:-2px}.hero h1 span{color:var(--green)}.hero p{color:var(--muted);max-width:600px;font-size:1.07rem}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:11px 17px;border:1px solid var(--green);border-radius:9px;font-weight:700;display:inline-flex;align-items:center;gap:8px}.btn.primary{background:var(--green);color:#04100a}.btn:hover{transform:translateY(-2px)}.terminal{background:#050b09;border:1px solid #24513e;border-radius:15px;overflow:hidden;box-shadow:0 22px 80px #0008}.termhead{padding:12px 15px;background:#0d1a15;display:flex;gap:7px;align-items:center;border-bottom:1px solid #1c382b;color:#9cb7ac;font-size:.8rem}.dot{height:9px;width:9px;border-radius:50%;background:#ff6b6b}.dot:nth-child(2){background:#ffd166}.dot:nth-child(3){background:#62ffad}.termcontent{padding:20px;font: .9rem/1.9 ui-monospace,SFMono-Regular,Consolas,monospace;min-height:255px;color:#80ffb8}.dim{color:#719c88}.cursor{display:inline-block;width:8px;height:16px;background:var(--green);vertical-align:middle;animation:blink 1s steps(2) infinite}@keyframes blink{50%{opacity:0}}
+section{padding:48px 0}.section-title{font-size:1.8rem;margin:0 0 8px}.sub{color:var(--muted);margin:0 0 25px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,var(--panel),#0a1512);border:1px solid var(--line);border-radius:14px;padding:22px}.icon{font-size:1.5rem}.card h3{margin:8px 0}.card p{color:var(--muted);margin:0}.tag{display:inline-block;color:var(--green);background:#102b20;border:1px solid #23563d;padding:3px 8px;border-radius:99px;font-size:.75rem;margin:14px 5px 0 0}.lab{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}.labbox{border:1px solid var(--line);border-radius:14px;background:#07100d;padding:20px}.labbox h3{margin-top:0}.commandrow{display:flex;gap:8px;margin-top:15px}.commandrow input{flex:1;min-width:0;background:#0d1b16;border:1px solid #2a4a3b;border-radius:8px;color:var(--white);padding:12px;font:inherit}.commandrow button{background:var(--green);color:#05100a;border:0;border-radius:8px;padding:0 15px;font-weight:800;cursor:pointer}.output{height:180px;overflow:auto;white-space:pre-wrap;font: .87rem/1.8 ui-monospace,Consolas,monospace;color:#80ffb8;background:#030806;border-radius:8px;padding:14px}.small{font-size:.84rem;color:var(--muted)}.steps{counter-reset:step}.step{display:flex;gap:14px;margin:15px 0}.num{flex:0 0 35px;height:35px;display:grid;place-items:center;border-radius:10px;background:#153a2a;color:var(--green);font-weight:800}.step p{margin:0;color:var(--muted)}.step strong{color:var(--white)}footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:55px}.grid{grid-template-columns:1fr}.lab{grid-template-columns:1fr}.navlinks{gap:12px;font-size:.8rem}.navlinks a:nth-child(2){display:none}.hero h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="#">VISHAL<span>.LAB</span></a>
+  <div class="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#lab">Mini Lab</a><a href="#roadmap">Roadmap</a></div>
+</nav>
+<header class="hero">
+  <div>
+    <div class="eyebrow">Curious mind • Future security learner</div>
+    <h1>Learn. Build.<br><span>Secure.</span></h1>
+    <p>Welcome to my little corner of the internet. Yahan main web development, networking aur ethical cybersecurity ke basics seekh raha hoon — one project at a time.</p>
+    <div class="buttons"><a class="btn primary" href="#projects">Explore projects ↘</a><a class="btn" href="#lab">Try mini terminal ▷</a></div>
+  </div>
+  <div class="terminal">
+    <div class="termhead"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span style="margin-left:8px">vishal@cyber-lab:~</span></div>
+    <div class="termcontent"><div class="dim"># Welcome to the learning lab</div>
+<div>$ whoami</div><div>curious_builder</div>
+<div>$ focus --current</div><div>web • networking • security basics</div>
+<div>$ status</div><div>Learning mode: ON <span class="cursor"></span></div></div>
+  </div>
+</header>
+<section id="about">
+  <div class="eyebrow">01 / About</div><h2 class="section-title">Not a hacker movie. Real learning.</h2>
+  <p class="sub">Main abhi skills build kar raha hoon: pehle basics, phir safe labs, aur phir apne projects. This site is my public learning portfolio.</p>
+  <div class="grid">
+    <article class="card"><div class="icon">🌐</div><h3>Web Development</h3><p>HTML, CSS aur JavaScript se useful, responsive websites banana.</p><span class="tag">Building</span></article>
+    <article class="card"><div class="icon">🧭</div><h3>Networking</h3><p>IP address, DNS, ports aur internet kaam kaise karta hai — ye samajhna.</p><span class="tag">Learning</span></article>
+    <article class="card"><div class="icon">🛡️</div><h3>Cyber Safety</h3><p>Sirf apne systems aur permission wale practice labs par security seekhna.</p><span class="tag">Ethical first</span></article>
+  </div>
+</section>
+<section id="projects">
+  <div class="eyebrow">02 / Projects</div><h2 class="section-title">My starter projects</h2><p class="sub">Small projects bhi real progress hote hain. Is list ko apne future projects ke saath update karna.</p>
+  <div class="grid">
+    <article class="card"><div class="icon">⌨️</div><h3>Terminal Simulator</h3><p>Browser ke andar safe fake terminal commands ka demo. Koi real system scan nahi hota.</p><span class="tag">This website</span></article>
+    <article class="card"><div class="icon">🔎</div><h3>Network Notes</h3><p>IP, DNS aur ports ke short notes, diagrams aur examples.</p><span class="tag">Coming soon</span></article>
+    <article class="card"><div class="icon">🔐</div><h3>Password Safety Guide</h3><p>Passphrases, password managers aur two-factor authentication par beginner guide.</p><span class="tag">Coming soon</span></article>
+  </div>
+</section>
+<section id="lab">
+  <div class="eyebrow">03 / Interactive demo</div><h2 class="section-title">Mini terminal</h2><p class="sub">Try a command. Ye sirf website ke andar simulation hai — computer par command execute nahi hoti.</p>
+  <div class="lab">
+    <div class="labbox"><h3>Available commands</h3><p><code>help</code> — commands list</p><p><code>about</code> — lab ke baare mein</p><p><code>whoami</code> — demo user</p><p><code>date</code> — current browser date</p><p><code>clear</code> — output saaf karo</p><p class="small">Tip: command type karke Enter dabao.</p></div>
+    <div class="labbox"><div class="output" id="output" aria-live="polite">VISHAL.LAB mini terminal v1.0\nType "help" to see available commands.\n$ </div><form id="commandform" class="commandrow"><input id="command" autocomplete="off" aria-label="Terminal command" placeholder="Type help..." maxlength="40"><button>Run</button></form></div>
+  </div>
+</section>
+<section id="roadmap">
+  <div class="eyebrow">04 / Next steps</div><h2 class="section-title">My learning roadmap</h2><p class="sub">One step at a time. No paid tools required to start.</p>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><div><strong>Web basics</strong><p>HTML, CSS, JavaScript aur responsive design.</p></div></div>
+    <div class="step"><div class="num">2</div><div><strong>Networking fundamentals</strong><p>IP, DNS, ports, HTTP/HTTPS aur home network.</p></div></div>
+    <div class="step"><div class="num">3</div><div><strong>Linux fundamentals</strong><p>Files, folders, permissions aur basic terminal commands.</p></div></div>
+    <div class="step"><div class="num">4</div><div><strong>Safe security labs</strong><p>Legal beginner labs aur defensive security concepts.</p></div></div>
+  </div>
+</section>
+<footer><span>© <span id="year"></span> Vishal.Lab • Built with HTML, CSS & JavaScript</span><span>Learn ethically. Build proudly. 🌱</span></footer>
+</div>
+<script>
+const out=document.getElementById('output'), form=document.getElementById('commandform'), input=document.getElementById('command');
+document.getElementById('year').textContent=new Date().getFullYear();
+function write(line){out.textContent += line+'\\n';out.scrollTop=out.scrollHeight}
+form.addEventListener('submit',e=>{e.preventDefault();const c=input.value.trim().toLowerCase();if(!c)return;write('$ '+c);let msg;
+switch(c){
+case 'help':msg='Commands: help, about, whoami, date, clear';break;
+case 'about':msg='This is a safe browser-based terminal simulation. No real commands run.';break;
+case 'whoami':msg='visitor@vishal-lab (demo user)';break;
+case 'date':msg=new Date().toString();break;
+case 'clear':out.textContent='';input.value='';return;
+default:msg='Command not found. Type "help" for the available demo commands.';
+}write(msg);write('');input.value='';});
+</script>
+</body>
+</html>
